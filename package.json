@@ -1,0 +1,59 @@
+{
+  "name": "react-flex-primitive",
+  "version": "1.0.0",
+  "description": "A declarative React primitive Flex component that exposes flexbox specification in JSX",
+  "main": "./dist/react_flex_primitive.js",
+  "types": "./dist/react_flex_primitive.d.ts",
+  "repository": "git@github.com:alexanderjeurissen/Flex.git",
+  "author": "Alexander Jeurissen <1220084+alexanderjeurissen@users.noreply.github.com>",
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/alexanderjeurissen/Flex/issues"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc --listFiles --newline lf",
+    "babel": "./node_modules/.bin/babel src -d",
+    "build:dev": "tsc -w --newline lf",
+    "test": "npm run test:prettier && npm run test:jest",
+    "posttest": "rm -r tests/custom-db/*",
+    "test:dev": "cross-env ENV_CI=true DEV_MODE=true jest --watch --coverage --config jest.config.js",
+    "test:jest": "cross-env ENV_CI=true jest --verbose --forceExit --coverage --config jest.config.js",
+    "test:prettier": "prettier-check \"+(tests|src|examples)/**/**.+(js|ts)\" --tab-width 4 --print-width 120",
+    "preversion": "rm -rf dist/* && yarn build"
+  },
+  "keywords": [
+    "styled-components",
+    "styled-system",
+    "jsx",
+    "react",
+    "css-flex",
+    "css-flex-layout",
+    "flex",
+    "component",
+    "primitive"
+  ],
+  "dependencies": {
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "@styled-system/should-forward-prop": "^5.1.5",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@types/node": "^14.0.13",
+    "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
+    "@types/styled-system__should-forward-prop": "^5.1.1",
+    "typescript": "^3.9.5"
+  }
+}
