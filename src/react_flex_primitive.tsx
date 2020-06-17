@@ -68,7 +68,7 @@ interface FlexProps {
   width?: string | number
 }
 
-export const FlexNative = styled.view.withConfig<FlexProps>({ shouldForwardProp })(
+export const FlexNative = styled.View.withConfig<FlexProps>({ shouldForwardProp })(
   {
     display: 'flex',
     minWidth: 0,
