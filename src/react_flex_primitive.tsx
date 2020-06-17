@@ -68,6 +68,15 @@ interface FlexProps {
   width?: string | number
 }
 
+export const FlexNative = styled.view.withConfig<FlexProps>({ shouldForwardProp })(
+  {
+    display: 'flex',
+    minWidth: 0,
+    minHeight: 0
+  },
+  compose(layout, flexbox, space)
+);
+
 const Flex = styled.div.withConfig<FlexProps>({ shouldForwardProp })(
   {
     display: 'flex',
@@ -77,6 +86,6 @@ const Flex = styled.div.withConfig<FlexProps>({ shouldForwardProp })(
   compose(layout, flexbox, space)
 );
 
-Flex.displayName = 'Flex';
+FlexNative.displayName = Flex.displayName = 'Flex';
 
 export default Flex;
