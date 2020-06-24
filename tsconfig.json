@@ -5,6 +5,7 @@
     "declaration": true,
     "target": "es2017",
     "jsx": "react",
+    "skipLibCheck": true,
     "lib": [
       "dom",
       "esnext",
