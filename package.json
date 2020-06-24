@@ -1,5 +1,5 @@
 {
-  "name": "react-flex-primitive",
+  "name": "@alexanderjeurissen/flex",
   "version": "1.0.8",
   "description": "A declarative React primitive Flex component that exposes flexbox specification in JSX",
   "main": "./dist/react_flex_primitive.js",
