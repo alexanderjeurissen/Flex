@@ -42,14 +42,14 @@
     "primitive"
   ],
   "dependencies": {
+    "@styled-system/should-forward-prop": "^5.1.5",
     "styled-components": "^5.1.1",
-    "styled-system": "^5.1.5",
-    "@styled-system/should-forward-prop": "^5.1.5"
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.10.2",
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
     "@types/node": "^14.0.13",
     "@types/styled-components": "^5.1.0",
     "@types/styled-system": "^5.1.9",
