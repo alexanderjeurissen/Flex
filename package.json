@@ -28,7 +28,8 @@
     "test:dev": "cross-env ENV_CI=true DEV_MODE=true jest --watch --coverage --config jest.config.js",
     "test:jest": "cross-env ENV_CI=true jest --verbose --forceExit --coverage --config jest.config.js",
     "test:prettier": "prettier-check \"+(tests|src|examples)/**/**.+(js|ts)\" --tab-width 4 --print-width 120",
-    "preversion": "rm -rf dist/* && yarn build"
+    "preversion": "rm -rf dist/* && yarn build",
+    "postversion": "git push --tags"
   },
   "keywords": [
     "styled-components",
