@@ -977,9 +977,9 @@
     csstype "^2.6.9"
 
 "@types/styled-system__should-forward-prop@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__should-forward-prop/-/styled-system__should-forward-prop-5.1.1.tgz#44df913bbd78ef56b4cab9cb1f91ccd92fd5d7fc"
-  integrity sha512-7A1awFdji4GJ2ZL9NZwTBZ/RinfXGwZf9bqOV3+lUU+nFMGCkHmg8nZMUrzBwFtl6EpA99cKPi6Q60PCleoP0Q==
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__should-forward-prop/-/styled-system__should-forward-prop-5.1.2.tgz#57a71acb9c85bdd6e47cbb7f645037c6858c1ee7"
+  integrity sha512-xHTA+qeTkKw8bJ7O7UxkzgTkVtlcEV0NbVlGkTZqHK/0YIGAPBcvHKs2y3811UeeHbkW9H/qfy7HtqwvAvwCSQ==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
